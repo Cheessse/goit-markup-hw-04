@@ -315,10 +315,17 @@ address {
 }
 
 .third-section-svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.third-section-svg-list {
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .our-team-icon-link {
