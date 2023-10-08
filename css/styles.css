@@ -108,6 +108,9 @@ address {
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: block;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -126,8 +129,8 @@ address {
     background-color: #404BBF;
 }
 
-.header-menu-list a:hover,
-.header-menu-list a:focus {
+.header-menu-link:hover,
+.header-menu-link:focus {
     color: #404bbf;
 }
 
@@ -147,10 +150,13 @@ address {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-soc-list .header-soc-link:hover,
-.header-soc-list .header-soc-link:focus {
+.header-soc-link:hover,
+.header-soc-link:focus {
     color: #404bbf;
 }
 
@@ -189,10 +195,13 @@ address {
     margin: 0 auto;
     min-width: 169px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .hero-btn:hover,
-.hero .hero-btn:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: #404BBF;
 }
 
@@ -319,6 +328,9 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-item-icon {
@@ -358,7 +370,37 @@ address {
     width: calc((100% - 48px) / 3);
 }
 
+.our-portfolio-item:hover .our-portfolio-block,
+.our-portfolio-item:focus .our-portfolio-block {
+    transform: translateY(0)
+}
+
 .our-portfolio-images {}
+
+.our-portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-portfolio-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 32px;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-block-text {
+    color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 
 .our-portfolio-card {
     padding: 32px 16px;
@@ -446,6 +488,9 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-icon:hover,
